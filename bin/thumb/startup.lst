@@ -1,0 +1,21 @@
+
+startup.bin:     file format binary
+startup.bin
+architecture: UNKNOWN!, flags 0x00000000:
+
+start address 0x00000000
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000008  00000000  00000000  00000000  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+SYMBOL TABLE:
+no symbols
+
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	30012000 	andcc	r2, r1, r0
+   4:	e7fee7fd 	udf	#61053	; 0xee7d
