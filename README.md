@@ -16,6 +16,8 @@ To make your code go in `bin/thumb/arm-assembly` edit the startup.s with you cod
 
 ## Dependencies
 
-`arm-none-gnueabi` [download](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) to cross-compiler the assembly.
+`arm-none-gnueabi` (download [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)) to cross-compiler the assembly.
+
 `make`
-`g++` or other, supporting c++11
+
+`g++` or other, supporting C++11
