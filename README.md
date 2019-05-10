@@ -1,16 +1,21 @@
 # Thumbmulator
 
-Thumbmulator is a ARM thumb mode code emulator that runs your the hexadecimal format of assembly code and show the results of regisgters, memory and stack.
+Thumbmulator is a ARM thumb mode code emulator
 
 Compile:
-> make
 
-Go to the bin/ in the project folder and run it.
+    make
 
-Usage: 
-> ./thumbmulator asmcode 
+Go to the `bin/` in the project folder and run it.
 
-To make your code in the bin/thumb edit the startup.s and put you code ther, after simple run make in bin/thumb path and use the generated startup.lst to emule  with thumbnator
+Usage:
 
-## Dependencies 
-    arm-none-gnueabi (you can download in arm page) //maybe using the linux-gnueabi not work
+    ./thumbmulator code
+
+To make your code go in `bin/thumb/arm-assembly` edit the startup.s with you code, after simple run `lstsanitaze` to generate the file `code.lst` that alow to `Thumbmulator` run the code.
+
+## Dependencies
+
+`arm-none-gnueabi` [download](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) to cross-compiler the assembly.
+`make`
+`g++` or other, supporting c++11

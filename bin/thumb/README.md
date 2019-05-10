@@ -1,8 +1,9 @@
-# Make Hexa
+# Write your assembly code
 
-Edit his startup.s and put the code you want to emulate
-Then run make command
+To write your code, simple edit the file `startup.s`:
 
-> make
+    arm/assembly/startup.s
 
-After its generated the file startup.lst, you must use this file as parameter to thumbmulator
+After simple run the `lstsanitize`:
+
+    ./lstsanitize
