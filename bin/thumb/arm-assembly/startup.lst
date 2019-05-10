@@ -7,7 +7,7 @@ start address 0x00000000
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000018  00000000  00000000  00000000  2**0
+  0 .data         00000006  00000000  00000000  00000000  2**0
                   CONTENTS, ALLOC, LOAD, DATA
 SYMBOL TABLE:
 no symbols
@@ -17,9 +17,6 @@ no symbols
 Disassembly of section .data:
 
 00000000 <.data>:
-   0:	21052003 	tstcs	r5, r3
-   4:	b404180a 	strlt	r1, [r4], #-2058	; 0xfffff7f6
-   8:	bc04df0a 	stclt	15, cr13, [r4], {10}
-   c:	2a003a01 	bcs	0xe818
-  10:	1c10d001 	ldcne	0, cr13, [r0], {1}
-  14:	e7fee7f6 	udf	#61046	; 0xee76
+   0:	30012000 	andcc	r2, r1, r0
+   4:	Address 0x0000000000000004 is out of bounds.
+
